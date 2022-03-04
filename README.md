@@ -16,9 +16,11 @@ I just want to share some information with the community that they might not hav
 The data that I am working with can be found in the aforementioned link. It is public use data. There are no names or privacy violations. I understand the importance of data ethics especially related to healthcare and made sure to navigate the general hospital trends rather than examine any individual patient data.
 Each year from 2005 onwards has it's own data file. I performed EDA on each year and created some data visualizations. I also performed data analysis to draw some insights from the development of Texas hospitals over the years. Data engineering is required in order to aggregate the data and turn it into a time series. The time series data was aggregated into Houston hospital discharge time series and Texas hospital discharge time series.
 
-Here are some of the visuals I've created:
+Here are some of the visuals I've created (2005 vs. 2020):
+
 ![Houston Hospitals 2005](./images/htx_largest_05.png)
 ![Houston Hospitals 2020](./images/htx_largest_20.png)
+
 ![TX Hospitals 2005](./images/tx_largest_05.png)
 ![TX Hospitals 2020](./images/tx_largest_20.png)
 
