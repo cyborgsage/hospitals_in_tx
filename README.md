@@ -24,6 +24,10 @@ Here are some of the visuals I've created (2005 vs. 2020):
 ![TX Hospitals 2005](./images/tx_largest_05.png)
 ![TX Hospitals 2020](./images/tx_largest_20.png)
 
+Those were the 5 highest discharge rates in order. As you can see, hospital discharges in Houston as well as Texas went down from 2005 to 2020.
+This may have related to the advent of many new hospitals. In 2005, there were 516 hospitals listed with a THCIC (Texas Health Care Information Collection) ID and 452 with complete discharge data. 56 were in Houston, TX. In 2020, there were 722 listed with a THCIC ID and 670 with complete discharge data, with 53 of them being in Houston. 
+**This implies that over 200 new hospitals were built in the state of Texas between 2005 and 2020. Data records also improved with complete data provided increasing from 87.6% of hospitals in 2005 to 92.8% of hospitals in 2020. Houston had 3 less hospitals in 2020 than 2005, which implies that hospitals may have been constructed outside the city in order to better serve communities in various parts of the metropolitan area outside city limits. This corresponds with the decrease in discharges. People likely experienced increased access to hospitals and closer commutes, no longer having to drive into Houston for quality healthcare. These are all positive trends for the community.**
+
 
 ## Modeling
 
