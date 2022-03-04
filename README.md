@@ -40,10 +40,12 @@ Time Series modeling on the discharge data included ARMA models, LSTM, and Faceb
 
 ## Future Research
 
+I would like to map the locations of hospitals across Texas. To do this, I will need longitude and latitude coordinates for each hospital. I will make maps for 2005 and 2020, showing the locations of the 200 new hospitals and maybe the increased access in more remote locations.
+
 ## References
 
 Texas Inpatient Public Use Data File: https://www.dshs.texas.gov/thcic/hospitals/Inpatientpudf.shtm <br>
-Big shout to Amar Kuppannan for inspiration. Check out his related blog here: https://medium.com/@ML_Treasures/forecasting-mortgage-rate-and-scraping-analyzing-the-realestateinvesting-subreddit-9ba4f1cb74b1
+Big shout to Amar Kuppannan for inspiration, check out his related blog here: https://medium.com/@ML_Treasures/forecasting-mortgage-rate-and-scraping-analyzing-the-realestateinvesting-subreddit-9ba4f1cb74b1 <br>
 
 ## Repository Structure
 
