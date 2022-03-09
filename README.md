@@ -34,6 +34,7 @@ I manually got the quarterly totals for each year and then created a dataframe w
 After aggregating the data, I created a new dataframe with dates and Texas discharge totals by quarter. I converted it into a time series and shipped it off into a csv which can be found in the data folder. The data looks like this when plotted. Note the variance in 2020 due to the onset of Covid.
 
 ![Discharge Time Series](./images/tx_total_discharges.png)
+![2 year rolling mean trend](./images/2yrMA_trend.png)
 
 The data currently has an upward trend as we expected and is not stationary.
 
