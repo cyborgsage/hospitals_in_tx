@@ -47,15 +47,46 @@ In 2005, there were 22,928,508 people in Texas. In 2019, there were 29,092,190 p
 
 ## Modeling
 
-Time Series modeling on the discharge data included ARMA models, LSTM, and Facebook Prophet.
+Time Series modeling on the discharge data included ARMA models, Facebook Prophet, and LSTM. Shout out to Amar (https://github.com/akuppan1) who does awesome time series forecasting. Check out his projects and specific links I used in the "References" section below.
+
+I began by using decomposition on the data with statsmodels. It displayed a seasonality component of the data in addition to the uptrend. 
+
+![Decomposition](./images/decomposition.png)
+
+The goal with time series is often to first achieve stationarity. I performed log transformation and then subtracted the 6 month or 2 period (quarterly) moving average. This resulted in stationary data. The Dickey-Fuller test is a good method to assess whether data is stationary, and it is what I used here.
+
+![Stationarity](./images/begtoend.png)
+
+Afterwards, I plotted ACF for my MA value and PACF for my AR value. AR value is for the p term while MA value is for the q term. This gave me a p value of 4 and a q value of 2 for my ARMA parameters.
+
+![ACF_plot](./images/ACF_plot.png)
+![PACF_plot](./images/PACF_plot.png)
+
+The resulting forecast is below:
+
+![ARMA forecast](./images/arma_forecast.png)
+
+Lastly, I ran a prediction with Facebook Prophet following Amar's real estate Reddit analysis project. The Facebook Prophet prediction came out quite clean.
+
+![Facebook Prophet](./images/fbprophet.png)
+
+
 
 ## Results
 
+The results were that I was able to formulate a prediction with an ARMA model and Facebook Prophet. The model technically had an AIC of -361.265 after differencing. The results of my time series forecasting are posted in the visuals above.
+
 ## Conclusion
+
+I learned quite a bit about Texas Hospitals, time series analysis and forecasting, and more.
+
+Hospitals in Texas have increased in number by over 200 since 2005. Discharges have also increased since that time, but the rate of change is <50% of the population growth in the same period of time. There were less hospitals listed in Houston in 2020 than 2005, indicating that many of the hospitals being built may be in more remote areas. They are likely serving suburbs, outskirts, and the countryside which is a good sign. People don't need to drive in to the city as much anymore because of the increased access to healthcare in more rural areas. Covid was the unicorn of my data. It drove discharges down for a while, likely because of the attention and focus it required, but then discharges picked back up. 
+
+According to my forecasting, we may see discharges stabilize in the coming years of 2022-2024 with a potential slight uptick. Hospital data entry and availability are also improving, and over 90% of facilities are reporting complete discharge data as of 2020. With the increasing availability of healthcare data, there will likely be an increase in data-for-good opportunities. I would like to help the community in the future on volunteer projects in healthcare.
 
 ## Future Research
 
-I would like to map the locations of hospitals across Texas. To do this, I will need longitude and latitude coordinates for each hospital. I will make maps for 2005 and 2020, showing the locations of the 200 new hospitals and maybe the increased access in more remote locations. I am also digging for more reliable TX healthcare-related data.
+I would like to map the locations of hospitals across Texas. To do this, I will need longitude and latitude coordinates for each hospital. I will make maps for 2005 and 2020, showing the locations of the 200 new hospitals and maybe the increased access in more remote locations. I am also digging for more reliable TX healthcare-related data. I had trouble with LSTM prediction and I have also had difficulty with it in the past. I may move in to that realm of deep learning in the future and try to incorporate it into this project.
 
 ## References
 
