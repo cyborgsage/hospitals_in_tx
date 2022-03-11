@@ -60,7 +60,7 @@ I would like to map the locations of hospitals across Texas. To do this, I will 
 ## References
 
 Texas Inpatient Public Use Data File: https://www.dshs.texas.gov/thcic/hospitals/Inpatientpudf.shtm <br>
-Big shout to Amar Kuppannan for inspiration, check out his related blog here: https://medium.com/@ML_Treasures/forecasting-mortgage-rate-and-scraping-analyzing-the-realestateinvesting-subreddit-9ba4f1cb74b1 <br>
+Big shout to Amar Kuppannan for inspiration, check out his related blog here: https://medium.com/@ML_Treasures/forecasting-mortgage-rate-and-scraping-analyzing-the-realestateinvesting-subreddit-9ba4f1cb74b1 and https://github.com/akuppan1/Real_Estate_Reddit_Web_Scraping <br>
 US Census data used for 2020 TX population: https://www.census.gov/data/tables/time-series/dec/popchange-data-text.html <br>
 Texas data used for 2005 to 2017 figures: https://www.tsl.texas.gov/ref/abouttx/census.html <br>
 populationU figures used for 2019 TX population specifically: https://www.populationu.com/us/texas-population
